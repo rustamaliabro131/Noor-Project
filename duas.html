@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily Duas — Noor (نور)</title>
+  <meta name="description" content="Learn essential daily supplications (Duas) for kids with Arabic text, English/Urdu translations, transliteration, and audio pronunciation." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2310B981'/><path d='M23 8a9 9 0 1 0 0 16 7 7 0 0 1 0-16Z' fill='%23F59E0B'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="duas">
+  <!-- ===================== APP BAR ===================== -->
+  <header class="app-bar">
+    <div class="container app-bar__inner">
+      <a class="brand" href="index.html" aria-label="Noor home">
+        <span class="brand__mark"><span class="icon" data-icon="moon-star"></span></span>
+        <span class="brand__text">NOOR <span class="brand__ar">نور</span></span>
+      </a>
+
+      <nav class="app-bar__nav" aria-label="Sections">
+        <a data-nav="index.html" href="index.html">Home</a>
+        <a data-nav="map.html" href="map.html">Quest Map</a>
+        <a data-nav="duas.html" href="duas.html">Duas</a>
+        <a data-nav="stories.html" href="stories.html">Stories</a>
+        <a data-nav="lesson.html" href="lesson.html">Lesson</a>
+        <a data-nav="challenges.html" href="challenges.html">Challenges</a>
+        <a data-nav="profile.html" href="profile.html">Profile</a>
+        <a data-nav="team.html" href="team.html">Team</a>
+      </nav>
+
+      <div class="app-stats" aria-label="Your stats">
+        <span class="stat-pill stat-pill--streak"><span class="icon" data-icon="flame"></span><b data-stat="streak">7</b></span>
+        <span class="stat-pill stat-pill--gem"><span class="icon" data-icon="gem"></span><b data-stat="coins">120</b></span>
+        <span class="stat-pill stat-pill--heart"><span class="icon" data-icon="heart"></span><b data-stat="hearts">5/5</b></span>
+      </div>
+
+      <div class="app-bar__auth" data-auth-area="app"></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- Page Header -->
+      <section class="section" style="padding-block: 1.5rem 0.5rem">
+        <div class="page-head text-center">
+          <span class="chip chip--gold mb-2"><span class="icon" data-icon="sparkles"></span> Daily Supplications</span>
+          <h1>Daily Duas (الأدعية اليومية)</h1>
+          <p class="lead mt-1">Learn essential duas for every moment of your day. Perfect for children ages 4–12 to memorize with Arabic, transliteration, and translation.</p>
+        </div>
+      </section>
+
+      <!-- Category Filters -->
+      <section class="section" style="padding-block: 1rem 0">
+        <div class="text-center mb-3">
+          <div class="row center wrap" style="justify-content: center; gap: 0.5rem">
+            <button class="btn btn--soft btn--sm filter-btn is-active" data-filter="all">All Duas</button>
+            <button class="btn btn--soft btn--sm filter-btn" data-filter="morning-evening">Morning & Evening</button>
+            <button class="btn btn--soft btn--sm filter-btn" data-filter="eating-drinking">Eating & Drinking</button>
+            <button class="btn btn--soft btn--sm filter-btn" data-filter="daily-routines">Daily Routines</button>
+            <button class="btn btn--soft btn--sm filter-btn" data-filter="protection">Protection</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Duas Grid -->
+      <section class="section" style="padding-block: 1.5rem">
+        <div class="duas-grid" id="duasGrid"></div>
+      </section>
+
+      <!-- Learning Tips -->
+      <section class="section" style="padding-block: 1rem 2.5rem">
+        <div class="card card--soft">
+          <div class="row">
+            <span class="card__ico card__ico--emerald"><span class="icon" data-icon="book-open"></span></span>
+            <div>
+              <strong class="fw-600">Tips for Memorizing Duas</strong>
+              <p class="text-sm muted mt-1">Practice each dua 3–5 times daily, say them at the right moment, and mark as memorized to earn Noor Coins & XP!</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- Dua Reader Modal -->
+  <div class="modal hidden" id="duaModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal__panel">
+      <button class="icon-btn" style="position: absolute; top: 1rem; right: 1rem;" data-close-dua aria-label="Close">
+        <span class="icon" data-icon="x"></span>
+      </button>
+      <div class="modal__icon modal__icon--emerald">
+        <span class="icon" data-icon="sparkles"></span>
+      </div>
+      <div class="stack" id="duaModalContent"></div>
+    </div>
+  </div>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="mini-footer">
+    <div class="container mini-footer__inner">
+      <span>© <span data-year>2026</span> Noor — Islamic learning adventures for kids.</span>
+      <span>Developed by <b>Rustam Ali</b> · <b>KWK Creatives</b> · <a href="team.html">Our Team</a></span>
+    </div>
+  </footer>
+
+  <!-- ===================== BOTTOM NAV ===================== -->
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <a class="tab" data-nav="index.html" href="index.html"><span class="icon" data-icon="home"></span>Home</a>
+    <a class="tab" data-nav="map.html" href="map.html"><span class="icon" data-icon="map"></span>Learn</a>
+    <a class="tab" data-nav="duas.html" href="duas.html"><span class="icon" data-icon="sparkles"></span>Duas</a>
+    <a class="tab" data-nav="stories.html" href="stories.html"><span class="icon" data-icon="book-open"></span>Stories</a>
+    <a class="tab" data-nav="lesson.html" href="lesson.html"><span class="icon" data-icon="play"></span>Practice</a>
+    <a class="tab" data-nav="challenges.html" href="challenges.html"><span class="icon" data-icon="gift"></span>Challenges</a>
+    <a class="tab" data-nav="profile.html" href="profile.html"><span class="icon" data-icon="user"></span>Profile</a>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>

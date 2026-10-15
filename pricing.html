@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — Noor</title>
+  <meta name="description" content="Choose the Noor plan that fits your family. Start free, or go Pro for unlimited hearts, every Quran level and offline learning." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2310B981'/><path d='M23 8a9 9 0 1 0 0 16 7 7 0 0 1 0-16Z' fill='%23F59E0B'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="pricing">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Noor home">
+        <span class="brand__mark"><span class="icon" data-icon="moon-star"></span></span>
+        <span class="brand__text">NOOR <span class="brand__ar">نور</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="index.html#features">Features</a>
+        <a href="map.html">Quest Map</a>
+        <a href="team.html">Team</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn--soft btn--sm" href="login.html">Log in</a>
+        <a class="btn btn--primary btn--sm" href="map.html">Get Started Free</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===================== PRICING HERO ===================== -->
+    <section class="section" style="padding-block:2.5rem 1rem">
+      <div class="container">
+        <div class="section-head text-center">
+          <span class="chip chip--gold mb-2"><span class="icon" data-icon="crown"></span> Simple, family-friendly pricing</span>
+          <h1>Start free. Go Pro when you're ready.</h1>
+          <p class="lead mt-1">Every child gets the full Arabic Island adventure for free. Upgrade to unlock the entire Quran journey and unlimited practice.</p>
+        </div>
+
+        <!-- Billing cycle toggle -->
+        <div class="cycle-toggle mt-3">
+          <button class="seg-btn is-active" type="button" data-cycle="monthly">Monthly</button>
+          <button class="seg-btn" type="button" data-cycle="yearly">Yearly <span class="chip chip--emerald" style="margin-left:.35rem">Save 33%</span></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PLAN CARDS ===================== -->
+    <section class="section" style="padding-block:1rem 2rem">
+      <div class="container plan-grid">
+        <!-- Free -->
+        <article class="plan-card">
+          <div class="plan-card__head">
+            <span class="card__ico card__ico--emerald"><span class="icon" data-icon="sparkles"></span></span>
+            <div><h3>Free</h3><p class="text-sm muted">Perfect to get started</p></div>
+          </div>
+          <div class="plan-price">
+            <span class="plan-price__amount"><span data-price data-price-monthly="$0" data-price-yearly="$0">$0</span></span>
+            <span class="plan-price__per" data-per="/month">/month</span>
+          </div>
+          <button class="btn btn--soft btn--block mt-2" type="button" data-choose-plan="free">Continue with Free</button>
+          <ul class="plan-features">
+            <li><span class="icon text-primary" data-icon="check"></span> Arabic Island (full unit)</li>
+            <li><span class="icon text-primary" data-icon="check"></span> 3 lessons per day</li>
+            <li><span class="icon text-primary" data-icon="check"></span> Streaks, gems &amp; badges</li>
+            <li><span class="icon text-primary" data-icon="check"></span> Parent dashboard</li>
+            <li class="is-muted"><span class="icon" data-icon="x"></span> Wudu, Salah, Quran &amp; Duas units</li>
+            <li class="is-muted"><span class="icon" data-icon="x"></span> Unlimited hearts</li>
+          </ul>
+        </article>
+
+        <!-- Pro (featured) -->
+        <article class="plan-card plan-card--pro">
+          <span class="plan-card__ribbon"><span class="icon" data-icon="crown"></span> Most popular</span>
+          <div class="plan-card__head">
+            <span class="card__ico card__ico--gold"><span class="icon" data-icon="crown"></span></span>
+            <div><h3>Noor Pro</h3><p class="text-sm muted">Everything, unlocked</p></div>
+          </div>
+          <div class="plan-price">
+            <span class="plan-price__amount"><span data-price data-price-monthly="$9.99" data-price-yearly="$79.99">$9.99</span></span>
+            <span class="plan-price__per" data-per="/month">/month</span>
+          </div>
+          <button class="btn btn--gold btn--block mt-2" type="button" data-choose-plan="pro"><span class="icon" data-icon="sparkles"></span> Go Pro</button>
+          <ul class="plan-features">
+            <li><span class="icon text-primary" data-icon="check"></span> <b>Every unit</b> — Wudu, Salah, Quran &amp; Duas</li>
+            <li><span class="icon text-primary" data-icon="check"></span> Unlimited lessons each day</li>
+            <li><span class="icon text-primary" data-icon="check"></span> Unlimited hearts — never lose a streak</li>
+            <li><span class="icon text-primary" data-icon="check"></span> Offline quest packs</li>
+            <li><span class="icon text-primary" data-icon="check"></span> Priority new content &amp; companions</li>
+            <li><span class="icon text-primary" data-icon="check"></span> Up to 4 child profiles</li>
+          </ul>
+        </article>
+      </div>
+      <p class="text-sm muted text-center mt-2">Cancel anytime · This is a demo, no payment is taken.</p>
+    </section>
+
+    <!-- ===================== COMPARISON ===================== -->
+    <section class="section" style="padding-block:1rem 2.5rem">
+      <div class="container" style="max-width:820px">
+        <div class="card">
+          <div class="card__head">
+            <div>
+              <strong class="fw-600">Compare plans</strong>
+              <div class="text-sm muted">See exactly what changes when you go Pro</div>
+            </div>
+          </div>
+          <div class="compare">
+            <div class="compare__row compare__row--head">
+              <span>Feature</span><span>Free</span><span class="text-secondary">Pro</span>
+            </div>
+            <div class="compare__row"><span>Arabic Island unit</span><span class="text-primary">Included</span><span class="text-primary">Included</span></div>
+            <div class="compare__row"><span>Wudu, Salah, Quran &amp; Duas units</span><span class="is-muted">Locked</span><span class="text-primary">Included</span></div>
+            <div class="compare__row"><span>Daily lessons</span><span>3 / day</span><span class="text-primary">Unlimited</span></div>
+            <div class="compare__row"><span>Hearts</span><span>5 hearts</span><span class="text-primary">Unlimited</span></div>
+            <div class="compare__row"><span>Child profiles</span><span>1</span><span class="text-primary">Up to 4</span></div>
+            <div class="compare__row"><span>Offline packs</span><span class="is-muted">—</span><span class="text-primary">Included</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FINAL CTA ===================== -->
+    <section class="section" style="padding-block:1rem 3rem">
+      <div class="container">
+        <div class="cta-banner">
+          <span class="chip" style="background:rgba(255,255,255,.2);color:#fff"><span class="icon" data-icon="heart"></span> Loved by 12,000+ families</span>
+          <h2 class="mt-2">Unlock your child's full Noor journey.</h2>
+          <p class="mt-2" style="max-width:52ch;margin-inline:auto;color:rgba(255,255,255,.92)">Progress is saved instantly — you can upgrade at any time and pick up right where you left off.</p>
+          <div class="hero__cta mt-3" style="justify-content:center">
+            <button class="btn btn--gold btn--lg" type="button" data-choose-plan="pro"><span class="icon" data-icon="crown"></span> Go Pro</button>
+            <a class="btn btn--soft btn--lg" href="map.html"><span class="icon" data-icon="compass"></span> Explore free first</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="mini-footer">
+    <div class="container mini-footer__inner">
+      <span>© <span data-year>2026</span> Noor — Islamic learning adventures for kids.</span>
+      <span>Developed by <b>Rustam Ali</b> · <b>KWK Creatives</b> · <a href="team.html">Our Team</a></span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

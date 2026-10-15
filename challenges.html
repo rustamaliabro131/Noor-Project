@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Special Occasion Challenges — Noor</title>
+  <meta name="description" content="Seasonal Islamic activity challenges for kids during Ramadan and Rabi-ul-Awwal. Complete kind deeds and earn special occasion badges." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2310B981'/><path d='M23 8a9 9 0 1 0 0 16 7 7 0 0 1 0-16Z' fill='%23F59E0B'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="challenges">
+
+  <!-- ===================== APP BAR ===================== -->
+  <header class="app-bar">
+    <div class="container app-bar__inner">
+      <a class="brand" href="index.html" aria-label="Noor home">
+        <span class="brand__mark"><span class="icon" data-icon="moon-star"></span></span>
+        <span class="brand__text">NOOR <span class="brand__ar">نور</span></span>
+      </a>
+
+      <nav class="app-bar__nav" aria-label="Sections">
+        <a data-nav="index.html" href="index.html">Home</a>
+        <a data-nav="map.html" href="map.html">Quest Map</a>
+        <a data-nav="duas.html" href="duas.html">Duas</a>
+        <a data-nav="stories.html" href="stories.html">Stories</a>
+        <a data-nav="lesson.html" href="lesson.html">Lesson</a>
+        <a data-nav="challenges.html" href="challenges.html">Challenges</a>
+        <a data-nav="profile.html" href="profile.html">Profile</a>
+        <a data-nav="team.html" href="team.html">Team</a>
+      </nav>
+
+      <div class="app-stats" aria-label="Your stats">
+        <span class="stat-pill stat-pill--streak"><span class="icon" data-icon="flame"></span><b data-stat="streak">7</b></span>
+        <span class="stat-pill stat-pill--gem"><span class="icon" data-icon="gem"></span><b data-stat="coins">120</b></span>
+        <span class="stat-pill stat-pill--heart"><span class="icon" data-icon="heart"></span><b data-stat="hearts">5/5</b></span>
+      </div>
+
+      <div class="app-bar__auth" data-auth-area="app"></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- ===================== PAGE HEAD ===================== -->
+      <div class="page-head">
+        <span class="chip chip--gold mb-1"><span class="icon" data-icon="gift"></span> Seasonal activities</span>
+        <h1>Special Occasion Challenges</h1>
+        <p class="muted">Salaam, <span data-name>Explorer</span>! Choose a blessed month, complete kind deeds, and earn a special badge for your trophy room.</p>
+      </div>
+
+      <!-- ===================== OCCASION TABS (rendered by app.js) ===================== -->
+      <div class="occasion-tabs mt-3" id="occasionTabs" role="tablist" aria-label="Choose a special Islamic occasion"></div>
+
+      <!-- ===================== CHALLENGE HUB (rendered by app.js) ===================== -->
+      <div id="challengesMount" class="stack mt-3">
+        <div class="occasion-banner" id="challengeBanner"></div>
+        <div class="card" id="challengeProgress"></div>
+        <div class="activity-grid" id="activityGrid"></div>
+
+        <div class="card row-between wrap mt-2">
+          <div class="row">
+            <span class="card__ico card__ico--gold"><span class="icon" data-icon="trophy"></span></span>
+            <div>
+              <strong class="fw-600">Badges are saved to your profile</strong>
+              <div class="text-sm muted">Collect every occasion badge in the trophy room.</div>
+            </div>
+          </div>
+          <div class="row wrap" style="gap:.5rem">
+            <a class="btn btn--soft btn--sm" href="profile.html"><span class="icon" data-icon="user"></span> My badge collection</a>
+            <a class="btn btn--gold btn--sm" href="certificate.html"><span class="icon" data-icon="medal"></span> My certificate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="mini-footer">
+    <div class="container mini-footer__inner">
+      <span>© <span data-year>2026</span> Noor — Islamic learning adventures for kids.</span>
+      <span>Developed by <b>Rustam Ali</b> · <b>KWK Creatives</b> · <a href="team.html">Our Team</a></span>
+    </div>
+  </footer>
+
+  <!-- ===================== BOTTOM NAV ===================== -->
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <a class="tab" data-nav="index.html" href="index.html"><span class="icon" data-icon="home"></span>Home</a>
+    <a class="tab" data-nav="map.html" href="map.html"><span class="icon" data-icon="map"></span>Learn</a>
+    <a class="tab" data-nav="duas.html" href="duas.html"><span class="icon" data-icon="sparkles"></span>Duas</a>
+    <a class="tab" data-nav="stories.html" href="stories.html"><span class="icon" data-icon="book-open"></span>Stories</a>
+    <a class="tab" data-nav="lesson.html" href="lesson.html"><span class="icon" data-icon="play"></span>Practice</a>
+    <a class="tab" data-nav="challenges.html" href="challenges.html"><span class="icon" data-icon="gift"></span>Challenges</a>
+    <a class="tab" data-nav="profile.html" href="profile.html"><span class="icon" data-icon="user"></span>Profile</a>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>

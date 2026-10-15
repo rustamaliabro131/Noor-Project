@@ -1,0 +1,585 @@
+<!DOCTYPE html><html lang="en" rtrvr-gl-click="1" rtrvr-gl-input="1" rtrvr-gl-keydown="1" style="" rtrvr-mw-ready="1" rtrvr-mw-busy="0" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,23~hs,24~hs"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-secondary": "#ffffff", "tertiary-fixed-dim": "#adc6ff", "surface-container-low": "#f5f3ef", "tertiary-fixed": "#d8e2ff", "background": "#fbf9f5", "secondary-fixed-dim": "#ffb95f", "on-error": "#ffffff", "surface-container-high": "#eae8e4", "outline-variant": "#bbcabf", "primary-fixed": "#6ffbbe", "primary": "#006c49", "outline": "#6c7a71", "on-error-container": "#93000a", "on-tertiary-fixed": "#001a42", "secondary-fixed": "#ffddb8", "on-primary-container": "#00422b", "surface": "#fbf9f5", "primary-container": "#10b981", "surface-bright": "#fbf9f5", "surface-dim": "#dbdad6", "on-background": "#1b1c1a", "surface-tint": "#006c49", "on-tertiary": "#ffffff", "on-tertiary-fixed-variant": "#004395", "on-primary": "#ffffff", "inverse-surface": "#30312e", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#653e00", "inverse-on-surface": "#f2f0ed", "inverse-primary": "#4edea3", "secondary": "#855300", "on-surface": "#1b1c1a", "on-primary-fixed": "#002113", "surface-container-lowest": "#ffffff", "primary-fixed-dim": "#4edea3", "on-surface-variant": "#3c4a42", "on-tertiary-container": "#00367a", "tertiary-container": "#71a1ff", "error": "#ba1a1a", "secondary-container": "#fea619", "surface-variant": "#e4e2de", "on-secondary-container": "#684000", "tertiary": "#005ac2", "on-secondary-fixed": "#2a1700", "on-primary-fixed-variant": "#005236", "surface-container-highest": "#e4e2de", "surface-container": "#efeeea" }, "borderRadius": { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" }, "spacing": { "gutter": "1rem", "gutter-desktop": "1.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "margin": "1rem", "space-xl": "2.5rem", "margin-desktop": "3rem", "space-md": "1rem", "margin-tablet": "2rem", "space-sm": "0.5rem" }, "fontFamily": { "title-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "display-hero-mobile": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"] }, "fontSize": { "title-md": ["18px", { "lineHeight": "26px", "fontWeight": "600" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "700" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "500" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "700" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.03em", "fontWeight": "700" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "500" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "500" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "display-hero": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.03em", "fontWeight": "800" }] } } } };</script></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,23~hs,24~hs,49~hs"><header class="fixed top-0 w-full z-50 bg-surface/90 backdrop-blur-xl shadow-[0_1px_10px_rgba(0,0,0,0.05)]" rtrvr-ls="23~hs,24~hs"><div class="h-20 max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-space-sm" rtrvr-ls="23~hs,24~hs"><div class="flex items-center gap-space-sm"></div><nav class="hidden lg:flex items-center gap-space-md xl:gap-space-lg" data-active-classes="text-primary font-bold border-b-2 border-primary pb-1" rtrvr-ls="23~hs,24~hs"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors pb-1" data-path="home-overview" href="#" rtrvr-ls="23~hs,24~hs" rtrvr-ro="50">Home / Overview</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors pb-1" data-path="curriculum-and-quests" href="#">Curriculum &amp; Quests</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors pb-1" data-path="pricing-and-family-plans" href="#">Pricing &amp; Family Plans</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors pb-1" data-path="for-parents" href="#">For Parents</a><a aria-current="page" class="transition-colors text-primary font-bold border-b-2 border-primary pb-1" data-path="learner-profile" href="#">Learner Profile</a></nav><div class="flex items-center gap-space-xs sm:gap-space-sm"><div class="hidden md:flex items-center gap-space-xs px-3 py-1.5 rounded-full bg-surface-container border border-outline-variant/60 shadow-[inset_0_1px_2px_rgba(0,0,0,0.04)]"><div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-lowest shadow-sm"><span class="text-[14px]">🪙</span><span class="font-label-sm text-label-sm text-secondary font-bold">350</span></div><div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-surface-container-lowest shadow-sm"><span class="text-[14px]">❤️</span><span class="font-label-sm text-label-sm text-error font-bold">5/5</span></div><div class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-amber-50 shadow-sm"><span class="text-[14px]">🔥</span><span class="font-label-sm text-label-sm text-amber-700 font-extrabold">7</span></div></div><div class="relative flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-surface-container-high hover:bg-surface-container-highest transition-colors cursor-pointer border border-outline-variant/40"><div class="relative w-8 h-8 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold text-xs ring-2 ring-primary"><span class="material-symbols-outlined text-[18px]">face</span><span class="absolute -bottom-1 -right-1 w-3.5 h-3.5 bg-secondary rounded-full border-2 border-surface flex items-center justify-center text-[8px] text-on-secondary font-black">★</span></div><div class="hidden xl:flex flex-col text-left pr-1"><span class="font-label-sm text-label-sm text-on-surface leading-tight font-bold">Zayd</span><span class="text-[10px] text-primary font-semibold leading-none">Seeker Lvl 3</span></div><span class="material-symbols-outlined text-[16px] text-outline">expand_more</span></div><a class="inline-flex items-center justify-center gap-space-xs px-4 sm:px-5 py-2 sm:py-2.5 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-[0_4px_0_0_#006c49] active:translate-y-[2px] active:shadow-[0_2px_0_0_#006c49] hover:bg-primary transition-all whitespace-nowrap" data-path="signup" href="#"><span class="material-symbols-outlined text-[18px]">verified</span><span class="">Get Noor Pro</span></a></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-80px)]" rtrvr-ls="5~hs,6~hs,8~hs,9~hs"><div class="flex flex-col w-full" rtrvr-ls="5~hs,6~hs,8~hs,9~hs">
+<!-- Interactive Top Profile & Family Switcher Section -->
+<section class="w-full max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-md pb-space-lg">
+<!-- Family Child Switcher Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm mb-space-md">
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1 sm:pb-0 scrollbar-none">
+<button class="group inline-flex items-center gap-space-xs px-4 py-2 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-md transition-all active:translate-y-[2px]" type="button">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-fixed animate-ping"></span>
+<span class="">⭐ Zayd</span>
+<span class="px-2 py-0.5 rounded-full bg-on-primary/20 text-on-primary font-label-sm text-label-sm">Age 7 • Active</span>
+</button>
+<button class="group inline-flex items-center gap-space-xs px-4 py-2 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-lg text-label-lg transition-all" type="button">
+<span class="text-base">🌸</span>
+<span class="">Maryam</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-low text-on-surface-variant font-label-sm text-label-sm">Age 5</span>
+</button>
+<button class="group inline-flex items-center gap-space-xs px-3.5 py-2 rounded-full bg-surface-container-low hover:bg-primary-fixed/30 text-primary font-label-lg text-label-lg transition-all" type="button">
+<span class="material-symbols-outlined text-[18px]">add_circle</span>
+<span class="">Add Sibling Profile</span>
+</button>
+</div>
+<!-- Quick Parent Security Action -->
+<div class="flex items-center gap-space-xs ml-auto">
+<button class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm transition-colors shadow-sm" id="parentGateBtn" type="button" rtrvr-ls="0~1" rtrvr-ro="38">
+<span class="material-symbols-outlined text-[16px] text-secondary">lock</span>
+<span class="">Parent PIN Active</span>
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container"></span>
+</button>
+</div>
+</div>
+<!-- Main Learner Avatar Spotlight Hero Banner -->
+<div class="relative w-full rounded-lg bg-surface-container-lowest p-space-md md:p-space-xl shadow-xl overflow-hidden">
+<!-- Ambient playful glow decorations -->
+<div class="absolute -right-16 -top-16 w-80 h-80 rounded-full bg-primary-fixed/20 blur-3xl pointer-events-none"></div>
+<div class="absolute -left-20 -bottom-20 w-72 h-72 rounded-full bg-secondary-fixed/30 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col lg:flex-row items-center lg:items-start justify-between gap-space-lg">
+<!-- Avatar + Companion Illustration and Identification -->
+<div class="flex flex-col sm:flex-row items-center gap-space-md text-center sm:text-left">
+<!-- Tactile Avatar Stack -->
+<div class="relative">
+<div class="w-28 h-28 sm:w-32 sm:h-32 rounded-3xl bg-primary-fixed/30 flex items-center justify-center p-1.5 shadow-lg group">
+<img class="w-full h-full object-cover rounded-2xl" data-alt="Playful 3D animated portrait of a smiling 7-year-old Muslim boy wearing an embroidered emerald green kufi cap and friendly warm smile, Disney Pixar style illustration, soft volumetric studio lighting, warm beige background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALQKznTrNJzNU6SilEI4E0yhjBWbejQIb4bqH-eBj7kjA4LidPHzBcwXFUCa7L_sueHm8klf1GmVz3b1L2ehQTdDvgP8vd4e71WzBgWRO4ojC7IPPMifJ2opY74fiQ9Kw7dyZXbLlcBBS5HntI2kTUh98xRRx8_XPQtRWjn8DMeFvupg77gA_XMMo3UoZjWZOUxJIyEiQnuxRyC1rh6H8h3vH4jVCCFfryCMkHNLNJOrmmBc2WIwpMUQ">
+</div>
+<!-- Unlocked Companion Pet Floater -->
+<div class="absolute -bottom-3 -right-3 flex items-center gap-1 bg-surface-container-lowest px-2.5 py-1 rounded-full shadow-lg" title="Hud-Hud the Wise Owl - Level 4 Companion">
+<span class="text-xl">🦉</span>
+<div class="flex flex-col text-left">
+<span class="font-label-sm text-[10px] text-primary leading-none font-bold">Hud-Hud</span>
+<span class="font-label-sm text-[9px] text-secondary leading-none">Lvl 4</span>
+</div>
+</div>
+</div>
+<!-- Titles, Rank & Milestones -->
+<div class="flex flex-col gap-1">
+<div class="flex flex-wrap items-center justify-center sm:justify-start gap-space-xs">
+<span class="font-headline-md text-headline-md text-on-surface font-extrabold tracking-tight">Zayd Al-Mansoor</span>
+<span class="px-2.5 py-0.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm shadow-sm">
+                ⭐ Level 12
+              </span>
+<span class="px-2.5 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm">
+                Tajweed Seeker
+              </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Exploring Surah Al-Falaq • Daily Goal: 20 min • Home Clan: Al-Noor Stars
+            </p>
+<!-- Action buttons -->
+<div class="flex flex-wrap items-center justify-center sm:justify-start gap-space-xs mt-space-xs">
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm transition-all active:translate-y-[1px]" type="button">
+<span class="material-symbols-outlined text-[16px] text-primary">palette</span>
+<span class="">Customize Avatar &amp; Robes</span>
+</button>
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-surface-container-low hover:bg-surface-container-high text-on-surface-variant font-label-sm text-label-sm transition-all" type="button">
+<span class="material-symbols-outlined text-[16px] text-secondary">swap_horiz</span>
+<span class="">Switch Learner</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Daily Stats Pill Matrix (High Energy Duolingo-style widgets) -->
+<div class="w-full lg:w-auto grid grid-cols-2 sm:grid-cols-4 gap-space-xs bg-surface-container-low p-space-sm rounded-2xl shadow-inner">
+<!-- Streak -->
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:scale-105 transition-transform">
+<div class="flex items-center gap-1">
+<span class="text-2xl animate-bounce">🔥</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-black">7</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Day Streak</span>
+<span class="font-label-sm text-[10px] text-primary font-bold">Active Today!</span>
+</div>
+<!-- Gems -->
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:scale-105 transition-transform">
+<div class="flex items-center gap-1">
+<span class="text-2xl">🪙</span>
+<span class="font-headline-sm text-headline-sm text-secondary-container font-black">350</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Noor Gems</span>
+<span class="font-label-sm text-[10px] text-secondary font-bold">+50 Claimable</span>
+</div>
+<!-- Hearts -->
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:scale-105 transition-transform">
+<div class="flex items-center gap-1">
+<span class="text-2xl">❤️</span>
+<span class="font-headline-sm text-headline-sm text-error font-black">5/5</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Hearts</span>
+<span class="font-label-sm text-[10px] text-primary font-bold">Full Energy</span>
+</div>
+<!-- Total XP -->
+<div class="flex flex-col items-center justify-center p-3 rounded-xl bg-surface-container-lowest shadow-sm hover:scale-105 transition-transform">
+<div class="flex items-center gap-1">
+<span class="text-2xl">⚡</span>
+<span class="font-headline-sm text-headline-sm text-primary font-black">1,420</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">Total XP</span>
+<span class="font-label-sm text-[10px] text-tertiary font-bold">Top 5% Week</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Two-Column Interactive Dashboard Layout -->
+<section class="w-full max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop pb-space-xl" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs">
+<!-- LEFT COLUMN: Child's Learning Journey & Trophy Room (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg" rtrvr-ls="49~hs">
+<!-- Active Quests Card -->
+<div class="rounded-lg bg-surface-container-lowest p-space-md md:p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-2xl bg-primary-fixed/40 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-[22px]">explore</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-extrabold leading-tight">Active Quests &amp; Missions</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">3 journeys currently underway</p>
+</div>
+</div>
+<span class="px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+              In Progress
+            </span>
+</div>
+<!-- Quest 1: Surah Al-Falaq -->
+<div class="rounded-2xl bg-surface-container-low p-space-md hover:bg-surface-container transition-all">
+<div class="flex items-start justify-between gap-space-sm mb-2">
+<div class="flex items-center gap-space-xs">
+<div class="w-9 h-9 rounded-full bg-primary-container text-on-primary flex items-center justify-center font-bold">
+                  📖
+                </div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold leading-tight">Surah Al-Falaq Memorization</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">3 of 4 Verses Mastered with Makhraj</p>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-primary font-black">75%</span>
+</div>
+<!-- Progress Bar -->
+<div class="w-full h-3 rounded-full bg-surface-container-highest overflow-hidden mb-space-xs">
+<div class="h-full rounded-full bg-primary-container transition-all duration-500" style="width: 75%"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1 text-[13px] text-tertiary font-bold">
+<span class="material-symbols-outlined text-[16px]">volume_up</span> Ayah 4 Phonetics Ready
+              </span>
+<button class="px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-sm text-label-sm hover:bg-primary/90 transition-all active:translate-y-[1px]" type="button">
+                Continue Quest
+              </button>
+</div>
+</div>
+<!-- Quest 2: Wudu Steps Practice (Ready to Claim) -->
+<div class="rounded-2xl bg-secondary-fixed/20 p-space-md relative overflow-hidden">
+<div class="flex items-start justify-between gap-space-sm mb-2">
+<div class="flex items-center gap-space-xs">
+<div class="w-9 h-9 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-bold">
+                  💧
+                </div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold leading-tight">Wudu Steps Practice</h3>
+<p class="font-body-sm text-body-sm text-secondary font-semibold">100% Completed! Great Barakah!</p>
+</div>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-bold animate-pulse">Ready</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-highest overflow-hidden mb-space-xs">
+<div class="h-full rounded-full bg-secondary-container" style="width: 100%"></div>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-on-surface-variant">All 8 purification postures validated</span>
+<button class="inline-flex items-center gap-1.5 px-4 py-2 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm shadow-md hover:bg-secondary/90 transition-all active:translate-y-[2px]" id="claimGemsBtn" type="button" rtrvr-ls="0~1" rtrvr-ro="38">
+<span class="">Claim +50 Gems</span>
+<span class="text-sm">🪙</span>
+</button>
+</div>
+</div>
+<!-- Quest 3: Story of Prophet Musa & the Nile -->
+<div class="rounded-2xl bg-surface-container-low p-space-md hover:bg-surface-container transition-all">
+<div class="flex items-start justify-between gap-space-sm mb-2">
+<div class="flex items-center gap-space-xs">
+<div class="w-9 h-9 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center font-bold">
+                  🌊
+                </div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-bold leading-tight">Prophet Musa &amp; the Nile</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Chapter 2 Unlocked: The Floating Basket</p>
+</div>
+</div>
+<span class="font-label-lg text-label-lg text-tertiary font-bold">Ch 2/5</span>
+</div>
+<div class="w-full h-3 rounded-full bg-surface-container-highest overflow-hidden mb-space-xs">
+<div class="h-full rounded-full bg-tertiary-container" style="width: 40%"></div>
+</div>
+<div class="flex items-center justify-between text-on-surface-variant font-body-sm text-body-sm">
+<span class="text-[13px]">Audio narration &amp; illustrated puzzle</span>
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-on-surface font-label-sm text-label-sm hover:bg-surface-container-highest transition-all" type="button">
+                Listen Chapter 2
+              </button>
+</div>
+</div>
+</div>
+<!-- Weekly XP Bar Chart Visual Component -->
+<div class="rounded-lg bg-surface-container-lowest p-space-md md:p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-extrabold">Weekly Learning Momentum</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Daily consistency &amp; XP accumulation (Avg: 45 min/day)</p>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold">
+<span class="material-symbols-outlined text-[16px]">trending_up</span>
+<span class="">+24% vs Last Week</span>
+</div>
+</div>
+<!-- Inline SVG Weekly Bar Chart -->
+<div class="w-full bg-surface-container-low rounded-2xl p-space-md flex flex-col gap-space-sm">
+<div class="h-44 w-full flex items-end justify-between gap-2 px-2 pt-4">
+<!-- Mon -->
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end group">
+<span class="font-label-sm text-[11px] text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">180 XP</span>
+<div class="w-full max-w-[42px] rounded-t-xl bg-primary-container/70 group-hover:bg-primary-container transition-all" style="height: 55%"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">M</span>
+</div>
+<!-- Tue -->
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end group">
+<span class="font-label-sm text-[11px] text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">220 XP</span>
+<div class="w-full max-w-[42px] rounded-t-xl bg-primary-container/70 group-hover:bg-primary-container transition-all" style="height: 70%"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">T</span>
+</div>
+<!-- Wed -->
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end group">
+<span class="font-label-sm text-[11px] text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">150 XP</span>
+<div class="w-full max-w-[42px] rounded-t-xl bg-primary-container/70 group-hover:bg-primary-container transition-all" style="height: 48%"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">W</span>
+</div>
+<!-- Thu -->
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end group">
+<span class="font-label-sm text-[11px] text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">260 XP</span>
+<div class="w-full max-w-[42px] rounded-t-xl bg-primary-container/70 group-hover:bg-primary-container transition-all" style="height: 82%"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">T</span>
+</div>
+<!-- Fri (Jummah High) -->
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end group">
+<span class="font-label-sm text-[11px] text-secondary font-bold opacity-0 group-hover:opacity-100 transition-opacity">310 XP</span>
+<div class="w-full max-w-[42px] rounded-t-xl bg-secondary-container group-hover:bg-secondary transition-all shadow-md" style="height: 98%"></div>
+<span class="font-label-sm text-label-sm text-secondary font-bold">F ★</span>
+</div>
+<!-- Sat -->
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end group">
+<span class="font-label-sm text-[11px] text-on-surface-variant opacity-0 group-hover:opacity-100 transition-opacity">190 XP</span>
+<div class="w-full max-w-[42px] rounded-t-xl bg-primary-container/70 group-hover:bg-primary-container transition-all" style="height: 60%"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">S</span>
+</div>
+<!-- Sun (Today) -->
+<div class="flex-1 flex flex-col items-center gap-1.5 h-full justify-end group">
+<span class="font-label-sm text-[11px] text-primary font-bold opacity-100">110 XP</span>
+<div class="w-full max-w-[42px] rounded-t-xl bg-primary group-hover:bg-primary transition-all animate-pulse" style="height: 38%"></div>
+<span class="font-label-sm text-label-sm text-primary font-extrabold">Sun</span>
+</div>
+</div>
+<!-- Chart metadata footer -->
+<div class="flex items-center justify-between pt-2 text-on-surface-variant font-body-sm text-body-sm">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="">Regular Daily Quests</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-secondary-container"></span>
+<span class="">Jummah Bonus Challenge (+50 XP)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Noor Trophy Case & Badges Room -->
+<div class="rounded-lg bg-surface-container-lowest p-space-md md:p-space-lg shadow-md flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-extrabold">Trophy Room &amp; Sacred Badges</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">3 Unlocked • 1 Inactive Seasonal Event</p>
+</div>
+<a class="font-label-sm text-label-sm text-primary hover:underline font-bold" href="#">View All (18)</a>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-sm">
+<!-- Badge 1: Early Fajr Bird -->
+<div class="flex flex-col items-center text-center p-space-sm rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all group">
+<div class="w-14 h-14 rounded-2xl bg-secondary-fixed/40 flex items-center justify-center text-2xl shadow-sm mb-2 group-hover:scale-110 transition-transform">
+                🏆
+              </div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold leading-tight">Early Fajr Bird</h4>
+<p class="font-label-sm text-[11px] text-on-surface-variant mt-0.5">Prayed on time 5 days in a row</p>
+<span class="mt-2 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-[10px] font-bold">Unlocked</span>
+</div>
+<!-- Badge 2: Arabic Master -->
+<div class="flex flex-col items-center text-center p-space-sm rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all group">
+<div class="w-14 h-14 rounded-2xl bg-primary-fixed/40 flex items-center justify-center text-2xl shadow-sm mb-2 group-hover:scale-110 transition-transform">
+                🌟
+              </div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold leading-tight">Arabic Master</h4>
+<p class="font-label-sm text-[11px] text-on-surface-variant mt-0.5">Alif to Yaa letter recognition</p>
+<span class="mt-2 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-[10px] font-bold">Unlocked</span>
+</div>
+<!-- Badge 3: Tajweed Guardian -->
+<div class="flex flex-col items-center text-center p-space-sm rounded-2xl bg-surface-container-low hover:bg-surface-container transition-all group">
+<div class="w-14 h-14 rounded-2xl bg-tertiary-fixed/60 flex items-center justify-center text-2xl shadow-sm mb-2 group-hover:scale-110 transition-transform">
+                🛡️
+              </div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold leading-tight">Tajweed Guard</h4>
+<p class="font-label-sm text-[11px] text-on-surface-variant mt-0.5">Ghunnah &amp; Qalqalah Level 3</p>
+<span class="mt-2 px-2 py-0.5 rounded-full bg-tertiary-fixed text-on-tertiary-fixed font-label-sm text-[10px] font-bold">Level 3</span>
+</div>
+<!-- Badge 4: Ramadan Locked Event -->
+<div class="flex flex-col items-center text-center p-space-sm rounded-2xl bg-surface-container-highest/60 opacity-75 group relative">
+<div class="w-14 h-14 rounded-2xl bg-surface-dim flex items-center justify-center text-2xl mb-2 text-outline">
+                🔒
+              </div>
+<h4 class="font-label-lg text-label-lg text-on-surface font-bold leading-tight">Ramadan Champ</h4>
+<p class="font-label-sm text-[11px] text-on-surface-variant mt-0.5">30-Day Fasting &amp; Sadaqah Tree</p>
+<span class="mt-2 px-2 py-0.5 rounded-full bg-surface-container text-on-surface-variant font-label-sm text-[10px] font-bold">Opens Sha'ban</span>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Parent Command & Insights Center (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs">
+<!-- Parent Gate Guard Notice Header -->
+<div class="rounded-lg bg-surface-container-lowest p-space-md md:p-space-lg shadow-md flex flex-col gap-space-md" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,49~hs">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-2xl bg-secondary-fixed/40 flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[22px]">admin_panel_settings</span>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface font-extrabold leading-tight">Parent Command Hub</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Supervise Zayd's screen balance &amp; metrics</p>
+</div>
+</div>
+<span class="px-2.5 py-1 rounded-full bg-primary-fixed text-on-primary-fixed font-label-sm text-label-sm font-bold flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">shield</span> Protected
+            </span>
+</div>
+<!-- Screen Time & Safety Controls Module -->
+<div class="rounded-2xl bg-surface-container-low p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-title-md text-title-md text-on-surface font-bold flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[18px] text-secondary">timer</span>
+                Daily Screen Time</span>
+<span class="font-headline-sm text-headline-sm text-primary font-black" id="sliderValue">20 min/day</span>
+</div>
+<!-- Range slider with interactive listener -->
+<input class="w-full accent-primary h-2 bg-surface-container-highest rounded-lg cursor-pointer" id="screenTimeSlider" max="60" min="10" step="5" type="range" value="20" rtrvr-ls="15~1" rtrvr-ro="34">
+<div class="flex items-center justify-between font-label-sm text-[11px] text-on-surface-variant">
+<span class="">10 min (Gentle)</span>
+<span class="text-secondary font-bold">12 min used today (8m left)</span>
+<span class="">60 min (Max)</span>
+</div>
+<!-- Quran Audio Playback Speed Preference Selector -->
+<div class="pt-2 mt-1">
+<label class="font-label-sm text-label-sm text-on-surface font-bold flex items-center gap-1 mb-2">
+<span class="material-symbols-outlined text-[16px] text-tertiary">speed</span>
+                Quran Audio Recitation Speed (for phonetics):
+              </label>
+<div class="grid grid-cols-3 gap-space-xs">
+<button class="speed-btn py-1.5 px-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm text-center transition-colors" type="button" rtrvr-ls="0~1" rtrvr-ro="38">
+                  0.75× (Phonetic)
+                </button>
+<button class="speed-btn py-1.5 px-2 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm text-center shadow-sm" type="button" rtrvr-ls="0~1" rtrvr-ro="38">
+                  1.0× (Standard)
+                </button>
+<button class="speed-btn py-1.5 px-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm text-center transition-colors" type="button" rtrvr-ls="0~1" rtrvr-ro="38">
+                  1.25× (Review)
+                </button>
+</div>
+</div>
+</div>
+<!-- Weekly Progress Telemetry Summary -->
+<div class="rounded-2xl bg-surface-container-low p-space-md flex flex-col gap-space-sm">
+<h3 class="font-title-md text-title-md text-on-surface font-bold">Weekly Report</h3>
+<div class="grid grid-cols-3 gap-space-xs text-center">
+<div class="p-2.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col items-center">
+<span class="font-headline-sm text-headline-sm text-primary font-extrabold">94.2%</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant leading-tight mt-1">Quiz Accuracy (48 questions)</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col items-center">
+<span class="font-headline-sm text-headline-sm text-secondary font-extrabold">32</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant leading-tight mt-1">Arabic Roots Mastered</span>
+</div>
+<div class="p-2.5 rounded-xl bg-surface-container-lowest shadow-sm flex flex-col items-center">
+<span class="font-headline-sm text-headline-sm text-tertiary font-extrabold">90%</span>
+<span class="font-label-sm text-[10px] text-on-surface-variant leading-tight mt-1">Namaz Posture Confidence</span>
+</div>
+</div>
+<p class="font-body-sm text-[13px] text-on-surface-variant bg-surface-container-lowest p-2.5 rounded-xl leading-relaxed">
+              💡 <strong>Teacher's Note:</strong> Zayd shows exceptional phonetic retention in Surat Al-Falaq verses 1-3. Next suggested focus is the throat letter <em>Haa (ح)</em> distinction.
+            </p>
+</div>
+<!-- Downloadable & Printable Weekly Certificate Card -->
+<div class="rounded-2xl bg-gradient-to-br from-secondary-fixed/30 via-surface-container-low to-surface-container-low p-space-md flex flex-col gap-space-sm" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,49~hs">
+<div class="flex items-center gap-space-xs">
+<div class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-bold text-xl shadow-sm">
+                🎓
+              </div>
+<div>
+<h3 class="font-title-md text-title-md text-on-surface font-extrabold leading-tight">Weekly Certificate Ready</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Level 2 Tajweed Completion Milestone</p>
+</div>
+</div>
+<div class="p-3 rounded-xl bg-surface-container-lowest shadow-sm flex items-center gap-3" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs">
+<div class="w-12 h-14 bg-surface-container-high rounded-md flex items-center justify-center text-primary font-bold shadow-inner">
+                📜
+              </div>
+<div class="flex-1" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs">
+<span class="font-label-lg text-label-lg text-on-surface font-bold block" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,12~hs,13~hs,15~hs,23~hs,49~hs" rtrvr-ro="42">Certificate</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant block" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">Issued for: Zayd Al-Mansoor • Verified</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-space-xs pt-1">
+<button class="inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-full bg-surface-container-highest hover:bg-surface-dim text-on-surface font-label-sm text-label-sm transition-all active:translate-y-[1px]" id="downloadPdfBtn" type="button" rtrvr-ls="0~1" rtrvr-ro="38">
+<span class="material-symbols-outlined text-[16px] text-primary">download</span>
+<span class="">Download PDF</span>
+</button>
+<button class="inline-flex items-center justify-center gap-1.5 py-2 px-3 rounded-full bg-primary-container hover:bg-primary text-on-primary font-label-sm text-label-sm shadow-sm transition-all active:translate-y-[1px]" id="whatsappShareBtn" type="button" rtrvr-ls="0~1,49~hs" rtrvr-ro="38">
+<span class="material-symbols-outlined text-[16px]">share</span>
+<span class="">Send to Family</span>
+</button>
+</div>
+</div>
+<!-- Account Tier & Membership Card -->
+<div class="rounded-2xl bg-surface-container p-space-md flex flex-col gap-2" rtrvr-ls="49~hs">
+<div class="flex items-center justify-between" rtrvr-ls="49~hs">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-full bg-primary-container"></span>
+<span class="font-label-lg text-label-lg text-on-surface font-extrabold">Noor Pro Family Plan</span>
+</div>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-lowest text-primary font-label-sm text-[11px] font-bold shadow-sm">
+                4/4 Seats Active
+              </span>
+</div>
+<p class="font-body-sm text-[13px] text-on-surface-variant" rtrvr-ls="49~hs" rtrvr-ro="42">
+              Renews Dec 15, 2026. Zero advertisement guarantee, unlimited offline downloads, and printable Sunnah quest kits included.
+            </p>
+<div class="flex items-center justify-between pt-1">
+<a class="font-label-sm text-label-sm text-primary hover:underline font-bold" href="#">Manage Billing &amp; Family Members</a>
+<span class="font-label-sm text-[11px] text-outline">Billed Annually</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive Modal: Parent Pin Safety Challenge Gate (Hidden by default, triggered by Lock button) -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-inverse-surface/40 backdrop-blur-sm hidden p-4" id="parentPinModal">
+<div class="w-full max-w-sm rounded-lg bg-surface-container-lowest p-space-lg shadow-2xl flex flex-col gap-space-md text-center">
+<div class="w-12 h-12 rounded-full bg-primary-fixed mx-auto flex items-center justify-center text-primary font-bold">
+<span class="material-symbols-outlined text-[24px]">verified_user</span>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface font-extrabold">Parent Gate Verification</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Please solve to access billing and profile limits:</p>
+</div>
+<div class="p-3 rounded-2xl bg-surface-container-low text-center">
+<span class="font-headline-md text-headline-md text-secondary font-black tracking-widest">7 × 8 = ?</span>
+</div>
+<div class="flex gap-2">
+<input class="flex-1 px-4 py-2 rounded-full bg-surface-container-low text-center font-bold text-on-surface focus:outline-none focus:ring-2 focus:ring-primary" id="parentMathInput" placeholder="Enter answer" type="number">
+<button class="px-5 py-2 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary/90" id="verifyPinBtn" type="button" rtrvr-ls="0~1" rtrvr-ro="38">
+          Verify
+        </button>
+</div>
+<button class="font-label-sm text-label-sm text-on-surface-variant hover:text-on-surface" id="closePinModal" type="button" rtrvr-ls="0~1" rtrvr-ro="38">
+        Cancel and return to profile
+      </button>
+</div>
+</div>
+<!-- Inline Micro-interactions Script -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Screen time dynamic slider update
+      const slider = document.getElementById('screenTimeSlider');
+      const sliderValue = document.getElementById('sliderValue');
+      if (slider && sliderValue) {
+        slider.addEventListener('input', (e) => {
+          sliderValue.textContent = `${e.target.value} min/day`;
+        });
+      }
+
+      // Audio speed selector toggle
+      const speedButtons = document.querySelectorAll('.speed-btn');
+      speedButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          speedButtons.forEach(b => {
+            b.className = 'speed-btn py-1.5 px-2 rounded-xl bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-sm text-label-sm text-center transition-colors';
+          });
+          btn.className = 'speed-btn py-1.5 px-2 rounded-xl bg-primary text-on-primary font-label-sm text-label-sm text-center shadow-sm';
+        });
+      });
+
+      // Claim Gems micro-interaction
+      const claimBtn = document.getElementById('claimGemsBtn');
+      if (claimBtn) {
+        claimBtn.addEventListener('click', function() {
+          this.textContent = 'Gems Claimed! ✨';
+          this.disabled = true;
+          this.classList.remove('bg-secondary');
+          this.classList.add('bg-primary-container', 'text-on-primary', 'cursor-default');
+        });
+      }
+
+      // Parent PIN modal trigger
+      const pinBtn = document.getElementById('parentGateBtn');
+      const pinModal = document.getElementById('parentPinModal');
+      const closePinModal = document.getElementById('closePinModal');
+      const verifyPinBtn = document.getElementById('verifyPinBtn');
+      const mathInput = document.getElementById('parentMathInput');
+
+      if (pinBtn && pinModal) {
+        pinBtn.addEventListener('click', () => {
+          pinModal.classList.remove('hidden');
+          if (mathInput) mathInput.focus();
+        });
+      }
+
+      if (closePinModal && pinModal) {
+        closePinModal.addEventListener('click', () => {
+          pinModal.classList.add('hidden');
+        });
+      }
+
+      if (verifyPinBtn && pinModal && mathInput) {
+        verifyPinBtn.addEventListener('click', () => {
+          if (mathInput.value === '56') {
+            alert('Parent access verified! Settings unlocked.');
+            pinModal.classList.add('hidden');
+            mathInput.value = '';
+          } else {
+            alert('Incorrect answer. Please try again.');
+            mathInput.value = '';
+          }
+        });
+      }
+
+      // PDF & WhatsApp trigger feedbacks
+      const pdfBtn = document.getElementById('downloadPdfBtn');
+      if (pdfBtn) {
+        pdfBtn.addEventListener('click', () => {
+          pdfBtn.innerHTML = '<span class="material-symbols-outlined text-[16px] animate-spin">refresh</span> Generating PDF...';
+          setTimeout(() => {
+            pdfBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">check</span> Downloaded!';
+          }, 1000);
+        });
+      }
+
+      const waBtn = document.getElementById('whatsappShareBtn');
+      if (waBtn) {
+        waBtn.addEventListener('click', () => {
+          waBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">done</span> Sent to Family!';
+          setTimeout(() => {
+            waBtn.innerHTML = '<span class="material-symbols-outlined text-[16px]">share</span> Send to Family';
+          }, 2000);
+        });
+      }
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-space-xl shadow-[0_-1px_12px_rgba(0,0,0,0.03)]" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs"><div class="max-w-7xl mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop pt-space-xl pb-space-lg" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,49~hs"><div class="bg-surface-container-lowest rounded-lg p-space-lg md:p-space-xl mb-space-xl shadow-[0_4px_12px_-2px_rgba(15,23,42,0.05)] flex flex-col lg:flex-row items-center justify-between gap-space-lg" rtrvr-ls="49~hs"><div class="max-w-xl text-center lg:text-left"><div class="inline-flex items-center gap-space-xs px-3 py-1 rounded-full bg-primary-fixed text-on-primary-fixed mb-space-sm font-label-sm text-label-sm"><span class="material-symbols-outlined text-[16px]">mail</span><span class="">Weekly Family Quest Pack</span></div><h3 class="font-headline-md text-headline-md text-on-surface font-bold">Playful Islamic parenting activities in your inbox</h3><p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">Join 35,000+ Muslim families receiving Sunday bedtime stories, Sunnah challenges, and printable reward charts.</p></div><form class="w-full lg:w-auto flex flex-col sm:flex-row items-stretch sm:items-center gap-space-sm flex-1 max-w-md"><input class="flex-1 px-5 py-3 rounded-full bg-surface-container-low border border-outline-variant font-body-md text-body-md text-on-surface placeholder:text-outline focus:outline-none focus:ring-2 focus:ring-primary" placeholder="Enter parent email address" type="email" rtrvr-ls="49~hs" rtrvr-ro="42"><button class="px-6 py-3 rounded-full bg-primary-container text-on-primary font-label-lg text-label-lg shadow-[0_3px_0_0_#006c49] active:translate-y-[2px] active:shadow-[0_1px_0_0_#006c49] hover:bg-primary transition-all whitespace-nowrap" type="button">Join the Club</button></form></div><div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-space-lg mb-space-xl" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,49~hs"><div class="col-span-2 lg:col-span-1" rtrvr-ls="0~hs,5~hs,6~hs,8~hs,9~hs,49~hs"><p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed mb-space-md" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">Inspiring the next generation of confident, joyful young Muslims through playful daily mastery.</p><div class="flex items-center gap-space-sm" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs"><span class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">play_circle</span></span><span class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">podcasts</span></span><span class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:bg-primary hover:text-on-primary transition-colors cursor-pointer"><span class="material-symbols-outlined text-[18px]">share</span></span></div></div><div rtrvr-ls="5~hs,6~hs,8~hs,9~hs"><h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-md text-[16px] leading-[22px]" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">Learning Quests</h4><ul class="flex flex-col gap-space-sm" rtrvr-ls="5~hs,6~hs,8~hs,9~hs"><li class="list-none" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="curriculum-and-quests" href="#" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="50">Curriculum &amp; Quests</a></li><li class="list-none" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="pricing-and-family-plans" href="#" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="50">Pricing &amp; Family Plans</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="namaz-guide" href="#">Namaz &amp; Wudu Guide</a></li><li class="list-none" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs" rtrvr-ro="42"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="audio-recitation" href="#" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs" rtrvr-ro="50">Ayah Audio Companion</a></li></ul></div><div><h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-md text-[16px] leading-[22px]">Parents &amp; Safety</h4><ul class="flex flex-col gap-space-sm"><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="for-parents" href="#">For Parents Hub</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="screen-time-controls" href="#">Screen Time Limits</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="parent-gate-policy" href="#">Parent Gate Policy</a></li><li class="list-none" rtrvr-ls="49~hs" rtrvr-ro="42"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="learner-profile" href="#" rtrvr-ls="49~hs" rtrvr-ro="50">Learner Progress</a></li></ul></div><div><h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-md text-[16px] leading-[22px]">Resources</h4><ul class="flex flex-col gap-space-sm"><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="home-overview" href="#">Home Overview</a></li><li class="list-none" rtrvr-ls="49~hs" rtrvr-ro="42"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="parent-handbook" href="#">Parent Handbook</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="hadith-of-the-day" href="#">Hadith Stories</a></li><li class="list-none" rtrvr-ls="49~hs" rtrvr-ro="42"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="faqs" href="#">Help Center</a></li></ul></div><div rtrvr-ls="5~hs,6~hs,8~hs,9~hs"><h4 class="font-headline-sm text-headline-sm text-on-surface mb-space-md text-[16px] leading-[22px]">Trust &amp; Legal</h4><ul class="flex flex-col gap-space-sm" rtrvr-ls="5~hs,6~hs,8~hs,9~hs"><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="coppa-compliance" href="#">COPPA Kid-Safe Badge</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a></li><li class="list-none"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="terms-of-service" href="#">Terms of Service</a></li><li class="list-none" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs" rtrvr-ro="42"><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" data-path="scholar-verification" href="#" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="50">Scholar Board Review</a></li></ul></div></div><div class="p-space-md rounded-lg bg-surface-container flex flex-wrap items-center justify-between gap-space-md mb-space-lg" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs"><div class="flex flex-wrap items-center gap-space-md" rtrvr-ls="5~hs,6~hs,8~hs,9~hs"><div class="inline-flex items-center gap-space-xs font-label-sm text-label-sm text-primary font-bold bg-surface-container-lowest px-3 py-1.5 rounded-full shadow-sm" rtrvr-ls="5~hs,6~hs,8~hs,9~hs"><span class="material-symbols-outlined text-[18px]">verified_user</span><span class="" rtrvr-ls="5~hs,6~hs,8~hs,9~hs,49~hs" rtrvr-ro="42">COPPA Safe Harbor Certified</span></div><div class="inline-flex items-center gap-space-xs font-label-sm text-label-sm text-secondary font-bold bg-surface-container-lowest px-3 py-1.5 rounded-full shadow-sm" rtrvr-ls="5~hs,6~hs,8~hs,9~hs"><span class="material-symbols-outlined text-[18px]" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">block</span><span class="" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">Zero Ads &amp; Safe Social</span></div><div class="inline-flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant font-medium bg-surface-container-lowest px-3 py-1.5 rounded-full shadow-sm"><span class="material-symbols-outlined text-[18px]">family_restroom</span><span class="">Pin-Protected Parent Gate</span></div></div><div class="font-label-sm text-label-sm text-on-surface-variant font-medium" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">Curriculum vetted by Certified Islamic Educators</div></div><div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant font-body-sm text-body-sm" rtrvr-ls="5~hs,6~hs,8~hs,9~hs"><p class="" rtrvr-ls="5~hs,6~hs,8~hs,9~hs" rtrvr-ro="42">© 2026 Noor Learning Inc. Made with barakah for Muslim families worldwide.</p><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-outline">English (US) / العربية</span><span class="inline-block w-2 h-2 rounded-full bg-primary-container"></span><span class="font-label-sm text-label-sm text-outline">Noor Platform</span></div></div></div></footer>
+
+
+
+</body></html>

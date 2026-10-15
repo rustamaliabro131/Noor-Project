@@ -1,0 +1,22 @@
+# WEBSITE DESIGN SPECIFICATION: "Noor" - Gamified Islamic Learning Web Platform
+## 1. Executive Summary & Vision
+- **Website Name:** Noor (نور)
+- **Target Audience:** Parents, Educators, and Kids (Ages 4–12).
+- **Core Purpose:** A modern, highly engaging marketing landing page and web app interface designed to showcase and deliver Duolingo-style gamified Islamic education (Quran, Namaz, Wudu, Arabic Alphabets, and Duas).
+- **Tone:** Encouraging, family-friendly, trustworthy, inspiring, and culturally rich with modern aesthetics.
+## 2. Website Structure & Navigation Architecture
+### A. Navigation Header (Fixed/Sticky)
+- **Brand Logo:** "NOOR" with a stylized glowing crescent moon or gold star emblem.
+- **Nav Links:** Features, How It Works (Learning Path), For Parents (Safety & Reports), Pricing / Plans (Free vs. Premium)
+- **CTAs:** Log In, Get Started Free
+### B. Landing Page Sections (Hero to Footer)
+1. Hero Section (Above the Fold) with animated mockup device frame, floating gamified badges, streak flames, coin rewards.
+2. Social Proof & Metrics Bar (4.9/5 Rating, 100+ Lessons, Daily Streak Challenges).
+3. Core Features Showcase (Bento Grid): Quest Map, Audio Voice Practice, Step-by-Step Namaz/Wudu 3D/Visual Guides, Parent Dashboard.
+4. Interactive Web Demo Widget: Playable sample mini-game (e.g. Arabic letter matching quiz).
+5. Testimonials & Parent Reviews.
+6. Footer with navigation, trust badges, privacy & parent guidelines.
+## 3. Web UI/UX Design System & Layout Guidelines
+- Colors: Emerald Green (#10B981), Amber Gold (#F59E0B), Soft Sky Blue (#3B82F6), Background: Soft Warm Cream / Neutral Light (#F8FAFC)
+- UI: Card-based, rounded corners, soft shadows, subtle Islamic geometric motifs, playful micro-interactions.
+- Target device: Desktop.

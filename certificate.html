@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Certificate — Noor</title>
+  <meta name="description" content="Print your official Noor Islamic Learning Journey completion certificate, proudly presented to every learner." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2310B981'/><path d='M23 8a9 9 0 1 0 0 16 7 7 0 0 1 0-16Z' fill='%23F59E0B'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="certificate">
+
+  <!-- ===================== APP BAR ===================== -->
+  <header class="app-bar">
+    <div class="container app-bar__inner">
+      <a class="brand" href="index.html" aria-label="Noor home">
+        <span class="brand__mark"><span class="icon" data-icon="moon-star"></span></span>
+        <span class="brand__text">NOOR <span class="brand__ar">نور</span></span>
+      </a>
+
+      <nav class="app-bar__nav" aria-label="Sections">
+        <a data-nav="index.html" href="index.html">Home</a>
+        <a data-nav="map.html" href="map.html">Quest Map</a>
+        <a data-nav="duas.html" href="duas.html">Duas</a>
+        <a data-nav="stories.html" href="stories.html">Stories</a>
+        <a data-nav="lesson.html" href="lesson.html">Lesson</a>
+        <a data-nav="challenges.html" href="challenges.html">Challenges</a>
+        <a data-nav="profile.html" href="profile.html">Profile</a>
+        <a data-nav="team.html" href="team.html">Team</a>
+      </nav>
+
+      <div class="app-stats" aria-label="Your stats">
+        <span class="stat-pill stat-pill--streak"><span class="icon" data-icon="flame"></span><b data-stat="streak">7</b></span>
+        <span class="stat-pill stat-pill--gem"><span class="icon" data-icon="gem"></span><b data-stat="coins">120</b></span>
+        <span class="stat-pill stat-pill--heart"><span class="icon" data-icon="heart"></span><b data-stat="hearts">5/5</b></span>
+      </div>
+
+      <div class="app-bar__auth" data-auth-area="app"></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+
+      <!-- ===================== PAGE HEAD (hidden when printing) ===================== -->
+      <div class="page-head row-between wrap no-print">
+        <div>
+          <span class="chip chip--gold mb-1"><span class="icon" data-icon="medal"></span> Your achievement</span>
+          <h1>Completion Certificate</h1>
+          <p class="muted">A printable keepsake celebrating the Noor Islamic Learning Journey.</p>
+        </div>
+        <div class="row wrap" style="gap:.5rem">
+          <button class="btn btn--gold" type="button" id="printCert">
+            <span class="icon" data-icon="printer"></span> Download / Print Certificate
+          </button>
+          <a class="btn btn--soft" href="profile.html"><span class="icon" data-icon="user"></span> Back to profile</a>
+        </div>
+      </div>
+
+      <div id="certStatus" class="cert-status no-print mt-3" role="status"></div>
+
+      <!-- ===================== THE CERTIFICATE ===================== -->
+      <div class="cert-shell">
+        <div class="certificate" id="certificate">
+          <div class="certificate__watermark" aria-hidden="true">
+            <svg viewBox="0 0 400 400" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="200" cy="200" r="168" />
+              <circle cx="200" cy="200" r="122" />
+              <rect x="88" y="88" width="224" height="224" />
+              <rect x="88" y="88" width="224" height="224" transform="rotate(45 200 200)" />
+              <path d="M200 34 268 200 200 366 132 200Z" />
+              <path d="M34 200 200 132 366 200 200 268Z" />
+              <path d="M200 118 248 200 200 282 152 200Z" />
+              <path d="M118 200 200 152 282 200 200 248Z" />
+            </svg>
+          </div>
+
+          <div class="certificate__inner">
+            <div class="certificate__brand">
+              <span class="brand__mark"><span class="icon" data-icon="moon-star"></span></span>
+              NOOR <span class="brand__ar">نور</span>
+            </div>
+
+            <div class="certificate__bismillah ar">بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيم</div>
+
+            <div class="certificate__eyebrow">Certificate of Achievement</div>
+            <h2 class="certificate__title">Noor Islamic Learning Journey</h2>
+
+            <p class="certificate__presented">This certificate is proudly presented to</p>
+            <div class="certificate__name" data-cert-name>Explorer</div>
+
+            <p class="certificate__text">for successfully completing the <b>Noor Islamic Learning Journey</b>, growing in Quran, Salah, Wudu, Arabic letters and beautiful Duas.</p>
+
+            <div class="certificate__seal" data-cert-seal aria-hidden="true"><span class="icon" data-icon="medal"></span></div>
+
+            <div class="certificate__signatures">
+              <div class="certificate__sign">
+                <span class="certificate__sign-line"></span>
+                <b>Rustam Ali</b>
+                <small>Platform Creator</small>
+              </div>
+              <div class="certificate__sign">
+                <span class="certificate__sign-line"></span>
+                <b>KWK Creatives</b>
+                <small>Company / Agency</small>
+              </div>
+            </div>
+
+            <div class="certificate__date">Awarded on <span data-cert-date>—</span> · Certificate ID <span data-cert-id>—</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="mini-footer">
+    <div class="container mini-footer__inner">
+      <span>© <span data-year>2026</span> Noor — Islamic learning adventures for kids.</span>
+      <span>Developed by <b>Rustam Ali</b> · <b>KWK Creatives</b> · <a href="team.html">Our Team</a></span>
+    </div>
+  </footer>
+
+  <!-- ===================== BOTTOM NAV ===================== -->
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <a class="tab" data-nav="index.html" href="index.html"><span class="icon" data-icon="home"></span>Home</a>
+    <a class="tab" data-nav="map.html" href="map.html"><span class="icon" data-icon="map"></span>Learn</a>
+    <a class="tab" data-nav="duas.html" href="duas.html"><span class="icon" data-icon="sparkles"></span>Duas</a>
+    <a class="tab" data-nav="stories.html" href="stories.html"><span class="icon" data-icon="book-open"></span>Stories</a>
+    <a class="tab" data-nav="lesson.html" href="lesson.html"><span class="icon" data-icon="play"></span>Practice</a>
+    <a class="tab" data-nav="challenges.html" href="challenges.html"><span class="icon" data-icon="gift"></span>Challenges</a>
+    <a class="tab" data-nav="profile.html" href="profile.html"><span class="icon" data-icon="user"></span>Profile</a>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>

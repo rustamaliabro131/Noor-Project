@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Log in — Noor</title>
+  <meta name="description" content="Sign in or create a free Noor account to sync your child's progress, streaks and Noor Gems across devices." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2310B981'/><path d='M23 8a9 9 0 1 0 0 16 7 7 0 0 1 0-16Z' fill='%23F59E0B'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="login">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Noor home">
+        <span class="brand__mark"><span class="icon" data-icon="moon-star"></span></span>
+        <span class="brand__text">NOOR <span class="brand__ar">نور</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="map.html">Quest Map</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="team.html">Team</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn--primary btn--sm" href="map.html">Explore as guest</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section auth-section">
+      <div class="container auth-shell">
+        <!-- Left: reassurance -->
+        <aside class="auth-aside">
+          <span class="chip chip--emerald mb-2"><span class="icon" data-icon="shield"></span> Kid-safe &amp; ad-free</span>
+          <h1>Welcome back to <span class="hl">Noor</span></h1>
+          <p class="lead mt-1">Sign in to sync your child's streaks, Noor Gems and quest progress across every device.</p>
+          <ul class="auth-list mt-3">
+            <li><span class="icon text-primary" data-icon="check"></span> Continue your daily streak</li>
+            <li><span class="icon text-primary" data-icon="check"></span> Unlock companions &amp; badges</li>
+            <li><span class="icon text-primary" data-icon="check"></span> Parent screen-time controls</li>
+          </ul>
+          <div class="card card--soft mt-3">
+            <div class="row">
+              <span class="card__ico card__ico--gold"><span class="icon" data-icon="crown"></span></span>
+              <div><strong class="fw-600">Noor Pro</strong><div class="text-sm muted">Unlimited hearts &amp; all Quran levels.</div></div>
+            </div>
+            <a class="btn btn--gold btn--sm btn--block mt-2" href="pricing.html"><span class="icon" data-icon="sparkles"></span> See plans</a>
+          </div>
+        </aside>
+
+        <!-- Right: form card -->
+        <div class="card auth-card">
+          <div class="auth-tabs" role="tablist">
+            <button class="auth-tab is-active" type="button" data-auth-tab="signin" role="tab">Sign in</button>
+            <button class="auth-tab" type="button" data-auth-tab="signup" role="tab">Create account</button>
+          </div>
+
+          <form id="loginForm" novalidate>
+            <label class="field" id="nameField" style="display:none">
+              <span>Child's name</span>
+              <input class="input" id="loginName" type="text" placeholder="e.g. Zayd" autocomplete="name" />
+            </label>
+            <label class="field mt-2">
+              <span>Email address</span>
+              <input class="input" id="loginEmail" type="email" placeholder="parent@example.com" autocomplete="email" required />
+            </label>
+            <label class="field mt-2">
+              <span>Password</span>
+              <input class="input" id="loginPassword" type="password" placeholder="••••••••" autocomplete="current-password" required />
+            </label>
+
+            <div class="form-notice hidden" id="loginNotice" role="status"></div>
+
+            <button class="btn btn--primary btn--lg btn--block mt-3" id="loginSubmit" type="submit">
+              <span class="icon" data-icon="user"></span> Sign in
+            </button>
+          </form>
+
+          <div class="auth-or"><span>or</span></div>
+
+          <button class="btn btn--soft btn--block" id="loginGuest" type="button">
+            <span class="icon" data-icon="compass"></span> Continue as guest
+          </button>
+          <p class="text-xs muted text-center mt-2">This is a demo — no real account or payment is created.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="mini-footer">
+    <div class="container mini-footer__inner">
+      <span>© <span data-year>2026</span> Noor — Islamic learning adventures for kids.</span>
+      <span>Developed by <b>Rustam Ali</b> · <b>KWK Creatives</b> · <a href="team.html">Our Team</a></span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

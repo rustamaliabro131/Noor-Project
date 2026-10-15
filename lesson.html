@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson — Noor</title>
+  <meta name="description" content="Interactive Noor lesson: flashcards, multiple-choice questions and matching games with instant feedback." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2310B981'/><path d='M23 8a9 9 0 1 0 0 16 7 7 0 0 1 0-16Z' fill='%23F59E0B'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="lesson">
+
+  <!-- ===================== LESSON TOP BAR ===================== -->
+  <header class="app-bar">
+    <div class="container app-bar__inner" style="height:auto;padding-block:.85rem;gap:1rem">
+      <a class="icon-btn" href="map.html" aria-label="Quit lesson" data-icon-label="Quit lesson">
+        <span class="icon" data-icon="x"></span>
+      </a>
+      <div class="grow">
+        <div class="row-between" style="margin-bottom:.45rem">
+          <strong id="lessonTitle" class="fw-600 text-sm">Loading lesson…</strong>
+          <span class="text-xs muted" id="lessonUnit">—</span>
+        </div>
+        <div class="lesson-progress" role="progressbar" aria-label="Lesson progress">
+          <span id="lessonProgressBar"></span>
+        </div>
+      </div>
+      <div class="lesson-hearts" id="lessonHearts" aria-label="Hearts remaining"></div>
+    </div>
+  </header>
+
+  <!-- ===================== EXERCISE STAGE ===================== -->
+  <main class="container lesson-shell" style="padding-bottom:2rem">
+    <div id="lessonMount">
+      <!-- Exercise card content is rendered by app.js -->
+      <div class="exercise" id="exerciseCard" aria-live="polite"></div>
+
+      <!-- Sticky bottom action bar -->
+      <div class="lesson-actions">
+        <div class="lesson-feedback hidden" id="lessonFeedback"></div>
+        <button class="btn btn--primary btn--lg btn--block hidden" id="lessonCheck" type="button" disabled>
+          Check answer
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="mini-footer">
+    <div class="container mini-footer__inner">
+      <span>© <span data-year>2026</span> Noor — Islamic learning adventures for kids.</span>
+      <span>Developed by <b>Rustam Ali</b> · <b>KWK Creatives</b> · <a href="team.html">Our Team</a></span>
+    </div>
+  </footer>
+
+  <!-- ===================== BOTTOM NAV ===================== -->
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <a class="tab" data-nav="index.html" href="index.html"><span class="icon" data-icon="home"></span>Home</a>
+    <a class="tab" data-nav="map.html" href="map.html"><span class="icon" data-icon="map"></span>Learn</a>
+    <a class="tab" data-nav="duas.html" href="duas.html"><span class="icon" data-icon="sparkles"></span>Duas</a>
+    <a class="tab" data-nav="stories.html" href="stories.html"><span class="icon" data-icon="book-open"></span>Stories</a>
+    <a class="tab" data-nav="lesson.html" href="lesson.html"><span class="icon" data-icon="play"></span>Practice</a>
+    <a class="tab" data-nav="challenges.html" href="challenges.html"><span class="icon" data-icon="gift"></span>Challenges</a>
+    <a class="tab" data-nav="profile.html" href="profile.html"><span class="icon" data-icon="user"></span>Profile</a>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>

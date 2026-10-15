@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noor — The Fun Way for Kids to Learn Islam, Quran & Arabic</title>
+  <meta name="description" content="Noor is a gamified Islamic learning platform for kids (ages 4–12). Daily quests, tajweed audio, step-by-step prayer guides, and a parent dashboard." />
+  <!-- Inline SVG favicon keeps the project free of missing-asset errors -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%2310B981'/><path d='M23 8a9 9 0 1 0 0 16 7 7 0 0 1 0-16Z' fill='%23F59E0B'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-page="landing">
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header">
+    <div class="container site-header__inner">
+      <a class="brand" href="index.html" aria-label="Noor home">
+        <span class="brand__mark"><span class="icon" data-icon="moon-star"></span></span>
+        <span class="brand__text">NOOR <span class="brand__ar">نور</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#reviews">Reviews</a>
+        <a href="stories.html">Stories</a>
+        <a href="team.html">Team</a>
+        <a href="pricing.html">Pricing</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="header-auth" data-auth-area="landing"></div>
+        <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span class="icon" data-icon="menu"></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile dropdown menu -->
+  <nav class="mobile-menu" id="mobileMenu" hidden aria-label="Mobile">
+    <a href="#features">Features</a>
+    <a href="#how">How it works</a>
+    <a href="#reviews">Reviews</a>
+    <a href="pricing.html">Pricing</a>
+    <a href="stories.html">Interactive Stories</a>
+    <a href="challenges.html">Seasonal Challenges</a>
+    <a href="team.html">Meet the Team</a>
+    <a href="map.html">Get Started Free →</a>
+  </nav>
+
+  <main>
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+      <div class="container hero__inner">
+        <span class="chip chip--gold">
+          <span class="icon" data-icon="sparkles"></span>
+          The #1 gamified Islamic learning app for kids
+          <span class="chip chip--neutral" style="background:#fff">Ages 4–12</span>
+        </span>
+
+        <h1>The fun, interactive way for kids to learn <span class="hl">Islam &amp; Quran</span>.</h1>
+        <p class="lead">Gamified daily quests, tajweed audio feedback, interactive Quran puzzles, and step-by-step prayer maps that inspire a lasting love for the Deen.</p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary btn--lg" href="map.html">
+            <span class="icon" data-icon="play"></span> Start Learning Free
+          </a>
+          <a class="btn btn--soft btn--lg" href="#features">
+            <span class="icon" data-icon="compass"></span> See How It Works
+          </a>
+        </div>
+
+        <div class="hero__trust">
+          <span class="stars" aria-label="4.9 out of 5 stars">
+            <span class="icon" data-icon="star"></span><span class="icon" data-icon="star"></span><span class="icon" data-icon="star"></span><span class="icon" data-icon="star"></span><span class="icon" data-icon="star"></span>
+          </span>
+          <strong>4.9/5 rating</strong>
+          <span aria-hidden="true">•</span>
+          <span>Trusted by 12,000+ Muslim families</span>
+          <span aria-hidden="true">•</span>
+          <span class="text-primary fw-600"><span class="icon" data-icon="shield" style="vertical-align:-4px"></span> Kid-safe &amp; ad-free</span>
+        </div>
+
+        <!-- Device mockup with floating gamified chips -->
+        <div class="hero__stage">
+          <div class="float-chip float-chip--streak">
+            <span class="float-chip__ico" style="background:var(--secondary-soft);color:var(--secondary-deep)"><span class="icon" data-icon="flame"></span></span>
+            <div><small>DAILY STREAK</small><strong>7 days active</strong></div>
+          </div>
+          <div class="float-chip float-chip--gem">
+            <span class="float-chip__ico" style="background:var(--primary-soft);color:var(--primary-deep)"><span class="icon" data-icon="gem"></span></span>
+            <div><small>NOOR GEMS</small><strong>120 coins</strong></div>
+          </div>
+          <div class="float-chip float-chip--level">
+            <span class="float-chip__ico" style="background:var(--tertiary-soft);color:var(--tertiary-dark)"><span class="icon" data-icon="graduation"></span></span>
+            <div><small>LEVEL UP</small><strong>Tajweed Explorer</strong></div>
+          </div>
+
+          <div class="device">
+            <div class="device__screen">
+              <div class="row-between" style="margin-bottom:1rem">
+                <div class="row">
+                  <span class="card__ico card__ico--emerald" style="width:40px;height:40px"><span class="icon" data-icon="compass"></span></span>
+                  <div><strong class="fw-600">Zayd's Quest Journey</strong><div class="text-xs muted">Chapter 1: The Arabic Island</div></div>
+                </div>
+                <span class="chip chip--emerald"><span class="icon" data-icon="zap"></span> 140 XP</span>
+              </div>
+              <!-- Mini winding path preview -->
+              <div class="quest-path" style="padding-block:1rem">
+                <div class="quest-node" style="--offset:-40px">
+                  <span class="node node--done" style="width:64px;height:64px"><span class="icon" data-icon="check"></span></span>
+                  <span class="node-label">Alif Island</span>
+                </div>
+                <div class="quest-node" style="--offset:30px">
+                  <span class="node node--done" style="width:64px;height:64px"><span class="icon" data-icon="star"></span><span class="node__badge"><span class="icon" data-icon="check"></span></span></span>
+                  <span class="node-label">Baa Bridge</span>
+                </div>
+                <div class="quest-node" style="--offset:-36px">
+                  <span class="node node--active" style="width:72px;height:72px"><span class="icon" data-icon="play"></span></span>
+                  <span class="node-label node-label--active">Surah Al-Fatiha</span>
+                </div>
+                <div class="quest-node" style="--offset:26px">
+                  <span class="node node--locked" style="width:64px;height:64px"><span class="icon" data-icon="lock"></span></span>
+                  <span class="node-label">Prophet Stories</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== METRICS ===================== -->
+    <section class="section" style="padding-block:2rem" aria-label="Why families trust Noor">
+      <div class="container metrics">
+        <div class="metric">
+          <span class="metric__ico" style="background:var(--secondary-soft);color:var(--secondary-deep)"><span class="icon" data-icon="star"></span></span>
+          <div><b>4.9 / 5.0</b><span class="text-xs muted">Rated by 12,000+ parents &amp; teachers</span></div>
+        </div>
+        <div class="metric">
+          <span class="metric__ico" style="background:var(--primary-soft);color:var(--primary-deep)"><span class="icon" data-icon="book-open"></span></span>
+          <div><b>100+ Quests</b><span class="text-xs muted">Alphabet, Tajweed, Duas &amp; Sunnah habits</span></div>
+        </div>
+        <div class="metric">
+          <span class="metric__ico" style="background:var(--tertiary-soft);color:var(--tertiary-dark)"><span class="icon" data-icon="zap"></span></span>
+          <div><b>85% Higher</b><span class="text-xs muted">Daily retention with streak gamification</span></div>
+        </div>
+        <div class="metric">
+          <span class="metric__ico" style="background:var(--primary-soft);color:var(--primary-deep)"><span class="icon" data-icon="shield"></span></span>
+          <div><b>100% Kid Safe</b><span class="text-xs muted">Ad-free, scholar-vetted &amp; parent approved</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURES (BENTO) ===================== -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-head">
+          <span class="chip chip--emerald mb-2"><span class="icon" data-icon="sparkles"></span> Pedagogy meets play</span>
+          <h2>Designed for joyful Islamic habit building</h2>
+          <p class="lead mt-1">Every screen, sound effect and interactive tap is intentionally crafted to nurture confidence in your child's Muslim identity.</p>
+        </div>
+
+        <div class="bento">
+          <!-- Interactive quest map -->
+          <article class="bento__item bento__item--8">
+            <span class="chip chip--gold"><span class="icon" data-icon="map"></span> Winding adventure pathway</span>
+            <h3>Interactive quest map with unlockable companions</h3>
+            <p class="muted">Kids travel through beautifully themed realms — from “Alif-Baa Island” to “Wudu Falls”. Every finished lesson unlocks friendly animal companions, celebratory chests and new chapters.</p>
+            <div class="row-between mt-3" style="gap:1rem;flex-wrap:wrap">
+              <div class="card card--soft" style="flex:1 1 220px;padding:1rem">
+                <div class="row"><span class="card__ico card__ico--emerald" style="width:44px;height:44px"><span class="icon" data-icon="book"></span></span>
+                  <div><strong class="fw-600">Hud-Hud the Owl</strong><div class="text-xs text-primary">Companion unlocked · Level 4</div></div>
+                </div>
+              </div>
+              <div style="flex:1 1 220px">
+                <div class="row-between text-sm mb-1"><strong class="fw-600">Quran pathway progress</strong><span class="text-primary fw-600">78%</span></div>
+                <div class="mockbar"><span style="width:78%"></span></div>
+                <div class="row-between text-xs muted mt-1"><span>Surah An-Nas</span><span>Surah Al-Falaq</span></div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Audio practice -->
+          <article class="bento__item bento__item--4">
+            <span class="chip chip--sky"><span class="icon" data-icon="volume"></span> Kid-friendly audio</span>
+            <h3>Gentle voice practice</h3>
+            <p class="muted">Warm, patient audio encourages kids as they sound out Arabic phonemes and short Quranic verses at their own pace.</p>
+            <div class="card card--soft mt-3 text-center">
+              <div class="ar text-primary" style="font-size:2rem">بِسْمِ اللّٰهِ</div>
+              <div class="row center" style="justify-content:center;gap:4px;height:44px;align-items:flex-end">
+                <span style="width:6px;height:24px;background:var(--primary);border-radius:9px" class="anim-bounce"></span>
+                <span style="width:6px;height:40px;background:var(--primary);border-radius:9px" class="anim-bounce"></span>
+                <span style="width:6px;height:34px;background:#34d399;border-radius:9px" class="anim-bounce"></span>
+                <span style="width:6px;height:44px;background:var(--primary);border-radius:9px" class="anim-bounce"></span>
+                <span style="width:6px;height:26px;background:#34d399;border-radius:9px" class="anim-bounce"></span>
+              </div>
+              <div class="row center text-primary text-sm fw-600" style="justify-content:center"><span class="icon" data-icon="mic"></span> Perfect tajweed pronunciation!</div>
+            </div>
+          </article>
+
+          <!-- Namaz & Wudu guides -->
+          <article class="bento__item bento__item--5">
+            <span class="chip chip--gold"><span class="icon" data-icon="hands"></span> Illustrated positions</span>
+            <h3>Step-by-step Namaz &amp; Wudu guides</h3>
+            <p class="muted">Clear, respectful visual guides for Takbir, Ruku, and Sujood with tap-to-listen recitations and posture checkers.</p>
+            <div class="grid-3 mt-3" style="gap:.6rem">
+              <div class="card card--soft text-center" style="padding:.75rem"><span class="icon text-primary" data-icon="user" style="width:28px;height:28px;margin:auto"></span><div class="fw-600">Qiyam</div><div class="text-xs muted">Hands folded</div></div>
+              <div class="card text-center" style="padding:.75rem;background:var(--primary-soft)"><span class="icon text-primary" data-icon="compass" style="width:28px;height:28px;margin:auto"></span><div class="fw-600 text-primary">Ruku</div><div class="text-xs muted">Back flat</div></div>
+              <div class="card card--soft text-center" style="padding:.75rem"><span class="icon text-primary" data-icon="target" style="width:28px;height:28px;margin:auto"></span><div class="fw-600">Sujood</div><div class="text-xs muted">7 points</div></div>
+            </div>
+          </article>
+
+          <!-- Parent dashboard -->
+          <article class="bento__item bento__item--7">
+            <span class="chip chip--emerald"><span class="icon" data-icon="shield"></span> Parental visibility</span>
+            <h3>Parent command center &amp; weekly reports</h3>
+            <p class="muted">Set healthy screen-time limits, view weekly accuracy breakdowns, and receive printable achievement certificates whenever your child masters a Surah.</p>
+            <div class="card card--soft mt-3 row-between wrap">
+              <div class="row">
+                <span class="card__ico card__ico--emerald" style="width:46px;height:46px"><span class="icon" data-icon="badge-check"></span></span>
+                <div><strong class="fw-600">Weekly report for Fatima (age 7)</strong><div class="text-sm muted">Completed 5 quests this week</div></div>
+              </div>
+              <span class="chip chip--emerald">Accuracy: 94.2%</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== INTERACTIVE DEMO QUIZ ===================== -->
+    <section class="section" id="how" style="background:linear-gradient(180deg,transparent,rgba(236,253,245,.6))">
+      <div class="container" style="max-width:760px">
+        <div class="section-head">
+          <span class="chip chip--gold"><span class="icon" data-icon="play"></span> Interactive preview</span>
+          <h2>Try a 10-second challenge!</h2>
+          <p class="lead mt-1">See how intuitive and rewarding Noor feels. Tap the Arabic letter that makes the “Baa” sound.</p>
+        </div>
+
+        <div class="quiz-shell" id="demoQuiz">
+          <div class="quiz-topbar">
+            <span class="row text-secondary fw-600"><span class="icon" data-icon="flame"></span> Streak: 7 days</span>
+            <span class="row text-primary fw-600"><span class="icon" data-icon="gem"></span> <span data-quiz-gems class="hidden">+20 Gems</span></span>
+          </div>
+
+          <div class="text-center mb-2">
+            <div class="exercise__audio" aria-hidden="true"><span class="icon" data-icon="volume"></span></div>
+            <h3 class="fw-600">Which letter makes the sound “Baa”?</h3>
+            <p class="text-sm muted">Tap the matching Arabic alphabet tile to continue.</p>
+          </div>
+
+          <div class="quiz-options">
+            <button class="quiz-option" type="button" data-correct="false"><span class="glyph">ا</span><span class="label">Alif</span></button>
+            <button class="quiz-option" type="button" data-correct="true"><span class="glyph">ب</span><span class="label">Baa</span></button>
+            <button class="quiz-option" type="button" data-correct="false"><span class="glyph">ت</span><span class="label">Taa</span></button>
+            <button class="quiz-option" type="button" data-correct="false"><span class="glyph">ث</span><span class="label">Thaa</span></button>
+          </div>
+
+          <div class="feedback hidden" role="status">
+            <div class="feedback__body">
+              <span class="feedback__ico"></span>
+              <div><strong>Correct!</strong><div class="text-sm" data-feedback-desc></div></div>
+            </div>
+            <button class="btn btn--primary btn--sm hidden" type="button" data-quiz-action>Next challenge</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section-head">
+          <span class="chip chip--gold"><span class="icon" data-icon="heart"></span> Parent &amp; educator love</span>
+          <h2>Loved by parents, adored by kids</h2>
+          <p class="lead mt-1">Noor replaces passive screen time with intentional, spiritually enriching Islamic habits.</p>
+        </div>
+
+        <div class="quote-grid">
+          <article class="card quote">
+            <div>
+              <div class="stars mb-2"><span class="icon" data-icon="star"></span><span class="icon" data-icon="star"></span><span class="icon" data-icon="star"></span><span class="icon" data-icon="star"></span><span class="icon" data-icon="star"></span></div>
+              <p>“My 6 and 9-year-olds genuinely fight over who does their Noor streak first after Maghrib. They memorised 4 new short Surahs in 3 weeks with correct makharij!”</p>
+            </div>
+            <div class="quote__author">
+              <span class="avatar-badge" style="background:var(--primary-soft);color:var(--primary-deep)">AK</span>
+              <div><strong class="fw-600">Amina Khan</strong><div class="text-xs muted">Mom of 2 • London, UK</div></div>
+            </div>
+          </article>
+          <article class="card quote">
+            <div>
+              <div class="stars mb-2"><span class="icon" data-icon="star"></span><span class="icon" data-icon="star"></span><span class="icon" data-icon="star"></span><span class="icon" data-icon="star"></span><span class="icon" data-icon="star"></span></div>
+              <p>“Finding ad-free, high-quality Islamic apps felt impossible until Noor. The quest progression keeps my son intrinsically motivated every single day.”</p>
+            </div>
+            <div class="quote__author">
+              <span class="avatar-badge" style="background:var(--secondary-soft);color:var(--secondary-deep)">TM</span>
+              <div><strong class="fw-600">Tariq &amp; Maryam</strong><div class="text-xs muted">Parents of 3 • Toronto, Canada</div></div>
+            </div>
+          </article>
+          <article class="card quote">
+            <div>
+              <div class="stars mb-2"><span class="icon" data-icon="star"></span><span class="icon" data-icon="star"></span><span class="icon" data-icon="star"></span><span class="icon" data-icon="star"></span><span class="icon" data-icon="star"></span></div>
+              <p>“The Wudu &amp; Namaz guides are wonderful. My 5-year-old now playfully corrects her grandmother's Sujud posture! The certificates motivate her so much.”</p>
+            </div>
+            <div class="quote__author">
+              <span class="avatar-badge" style="background:var(--tertiary-soft);color:var(--tertiary-dark)">SA</span>
+              <div><strong class="fw-600">Sarah Al-Hassan</strong><div class="text-xs muted">Homeschooling mom • Dallas, TX</div></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FINAL CTA ===================== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner">
+          <span class="chip" style="background:rgba(255,255,255,.2);color:#fff"><span class="icon" data-icon="heart"></span> Invest in your child today</span>
+          <h2 class="mt-2">Give your children the gift of loving their Deen.</h2>
+          <p class="mt-2" style="max-width:56ch;margin-inline:auto;color:rgba(255,255,255,.92)">Join 12,000+ Muslim families turning Islamic learning into the highlight of their daily routine. Free to start, zero ads ever.</p>
+          <div class="hero__cta mt-3" style="justify-content:center">
+            <a class="btn btn--gold btn--lg" href="map.html"><span class="icon" data-icon="sparkles"></span> Get Started for Free</a>
+            <a class="btn btn--soft btn--lg" href="#features"><span class="icon" data-icon="book-open"></span> Explore the curriculum</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="newsletter" style="margin-block:2rem">
+        <div>
+          <span class="chip chip--emerald mb-1"><span class="icon" data-icon="calendar"></span> Weekly family quest pack</span>
+          <h3 class="fw-600">Playful Islamic activities in your inbox</h3>
+          <p class="text-sm muted mt-1">Bedtime stories, Sunnah challenges and printable reward charts — every Sunday.</p>
+        </div>
+        <form class="field" onsubmit="return false">
+          <input type="email" placeholder="Enter parent email address" aria-label="Parent email" />
+          <button class="btn btn--primary" type="submit">Join free</button>
+        </form>
+      </div>
+
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html"><span class="brand__mark"><span class="icon" data-icon="moon-star"></span></span><span class="brand__text">NOOR <span class="brand__ar">نور</span></span></a>
+          <p class="text-sm muted mt-2">A safe, joyful, gamified way for children to build a lifelong love for Islam, Quran and Arabic.</p>
+        </div>
+        <div>
+          <h4>Learn</h4>
+          <a href="map.html">Quest Map</a>
+          <a href="stories.html">Interactive Stories</a>
+          <a href="lesson.html">Daily Lesson</a>
+          <a href="challenges.html">Seasonal Challenges</a>
+          <a href="certificate.html">My Certificate</a>
+          <a href="profile.html">My Progress</a>
+        </div>
+        <div>
+          <h4>Platform</h4>
+          <a href="pricing.html">Pricing</a>
+          <a href="team.html">Our Team</a>
+          <a href="#features">Features</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#how">Try a demo</a>
+        </div>
+        <div>
+          <h4>Families</h4>
+          <a href="#">Parent guide</a>
+          <a href="#">Privacy &amp; child safety</a>
+          <a href="#">Contact us</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Noor Learning. Made with care for the Ummah.</span>
+        <span class="row"><span class="icon text-primary" data-icon="shield"></span> Ad Free Experience for everyone</span>
+      </div>
+      <div class="footer-credit">
+        <span><b>Rustam Ali</b></span>
+        <span aria-hidden="true">×</span>
+        <span><b>KWK Creatives</b></span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================== BOTTOM NAV ===================== -->
+  <nav class="bottom-nav" aria-label="Main navigation">
+    <a class="tab" data-nav="index.html" href="index.html"><span class="icon" data-icon="home"></span>Home</a>
+    <a class="tab" data-nav="map.html" href="map.html"><span class="icon" data-icon="map"></span>Learn</a>
+    <a class="tab" data-nav="duas.html" href="duas.html"><span class="icon" data-icon="sparkles"></span>Duas</a>
+    <a class="tab" data-nav="stories.html" href="stories.html"><span class="icon" data-icon="book-open"></span>Stories</a>
+    <a class="tab" data-nav="lesson.html" href="lesson.html"><span class="icon" data-icon="play"></span>Practice</a>
+    <a class="tab" data-nav="challenges.html" href="challenges.html"><span class="icon" data-icon="gift"></span>Challenges</a>
+    <a class="tab" data-nav="profile.html" href="profile.html"><span class="icon" data-icon="user"></span>Profile</a>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
