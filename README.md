@@ -46,7 +46,7 @@
 ├── team.html           # Team & Leadership Page
 ├── css/                # Stylesheets (Tailwind CSS / Custom CSS)
 ├── js/                 # Application logic & localStorage controllers
-└── assets/             # Icons, Avatars, & Visuals
+└── assets/             # Icons, Avatars, &Audio files and Visuals
 🚀 Getting Started
 No complex build steps or node modules required! Since Noor uses a pure HTML/CSS/JS stack, you can run it locally in seconds:
 
